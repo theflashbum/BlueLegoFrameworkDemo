@@ -1,0 +1,50 @@
+<decalsheets>
+    <sheets baseURL="images/">
+        <sheet name="player_skin" preload="true" src="player_skin.gif"/>
+        <sheet name="background_textures" src="background_textures.gif"/>
+    </sheets>
+    <decals>
+        <!-- Player Controls Skins -->
+        <decals name="pause_up" sheet="player_skin" x="1" y="1" w="47" h="52"/>
+        <decals name="pause_over" sheet="player_skin" x="49" y="1" w="47" h="52"/>
+        <decals name="fullscreen_up" sheet="player_skin" x="289" y="1" w="47" h="52"/>
+        <decals name="fullscreen_over" sheet="player_skin" x="337" y="1" w="47" h="52"/>
+        <decals name="regular_screen_up" sheet="player_skin" x="454" y="54" w="47" h="52"/>
+        <decals name="regular_screen_over" sheet="player_skin" x="502" y="54" w="47" h="52"/>
+        <decals name="play_up" sheet="player_skin" x="97" y="1" w="47" h="52"/>
+        <decals name="play_over" sheet="player_skin" x="145" y="1" w="47" h="52"/>
+        <decals name="next_page_up" sheet="player_skin" x="492" y="1" w="47" h="52"/>
+        <decals name="next_page_over" sheet="player_skin" x="145" y="1" w="47" h="52"/>
+        <decals name="previous_page_up" sheet="player_skin" x="193" y="1" w="47" h="52"/>
+        <decals name="previous_page_over" sheet="player_skin" x="241" y="1" w="47" h="52"/>
+        <decals name="controls_background" sheet="player_skin" x="385" y="1" w="31" h="52" nineSlice="10,1,12,50"/>
+        <decals name="controls_texture" sheet="player_skin" x="417" y="1" w="26" h="52" nineSlice="1,1,24,50"/>
+        <!-- Slider/Volume Skins -->
+        <decals name="volume_minus" sheet="player_skin" x="427" y="63" w="10" h="4"/>
+        <decals name="volume_plus" sheet="player_skin" x="427" y="68" w="10" h="10"/>
+        <decals name="slider" sheet="player_skin" x="427" y="54" w="23" h="8"/>
+        <decals name="progress_track" sheet="player_skin" x="445" y="63" w="5" h="8"/>
+        <decals name="progress_position" sheet="player_skin" x="451" y="63" w="2" h="8"/>
+        <!-- Background Textures -->
+        <!-- TODO This needs to be looked at, its distorted from the gif compression -->
+        <decals name="thumbnail_background" sheet="player_skin" x="411" y="54" w="7" h="71"/>
+        <!-- Upload Button -->
+        <decals name="upload_button_up" sheet="player_skin" x="1" y="54" w="204" h="71"/>
+        <decals name="upload_button_over" sheet="player_skin" x="206" y="54" w="204" h="71"/>
+        <!-- and Textures -->
+        <decals name="dotted_line_texture" sheet="player_skin" x="438" y="72" w="3" h="3"/>
+        <decals name="share_close_up" sheet="player_skin" x="438" y="76" w="15" h="15"/>
+        <decals name="share_close_over" sheet="player_skin" x="438" y="92" w="15" h="15"/>
+        <decals name="share_field_texture" sheet="player_skin" x="540" y="1" w="9" h="24"/>
+        <decals name="bg" sheet="background_textures" x="1" y="1" w="3" h="465"/>
+        <decals name="vp_background" sheet="background_textures" x="5" y="1" w="6" h="396"/>
+        <decals name="vd_background" sheet="background_textures" x="15" y="1" w="1" h="315"/>
+        <decals name="gallery_bg" sheet="background_textures" x="12" y="1" w="1" h="315"/>
+        <decals name="small_arrow_over" sheet="player_skin" x="427" y="94" w="8" h="13"/>
+        <decals name="small_arrow_up" sheet="player_skin" x="427" y="108" w="8" h="13"/>
+        <decals name="star_up" sheet="player_skin" x="452" y="108" w="16" h="15"/>
+        <decals name="star_over" sheet="player_skin" x="438" y="108" w="16" h="15"/>
+        <decals name="star_highlight" sheet="player_skin" x="467" y="108" w="16" h="15"/>
+
+    </decals>
+</decalsheets>

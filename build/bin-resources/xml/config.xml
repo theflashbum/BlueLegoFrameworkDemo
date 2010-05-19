@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <uris handler="parseURIs">
+        <uri name="fonts"><![CDATA[swfs/fonts/${filename}.swf]]></uri>
+        <uri name="fcss"><![CDATA[css/${filename}.fcss]]></uri>
+        <uri name="xml"><![CDATA[xml/${filename}.xml]]></uri>
+        <uri name="selectContainer"><![CDATA[${location}/container/${id}/view/front]]></uri>
+    </uris>
+    <settings handler="parseSettings">
+        <property id="version" type="string"><![CDATA[1.0.0]]></property>
+        <property id="debug" type="boolean">true</property>
+        <property id="timer" type="number">8000</property>
+        <property id="title" type="string"><![CDATA[FlashBum in ${location}]]></property>
+        <property id="backgroundColor" type="uint">black</property>
+        <property id="zoomOffset" type="number">0</property>
+    </settings>
+    <resources handler="loadResources">
+        <file name="main.styles" uri="fcss" type="urlloader"/>
+        <file name="decalsheet" uri="xml" type="urlloader"/>
+    </resources>
+
+</config>

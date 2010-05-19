@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<bl:BlueLegoApplication
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:rx="http://rx.reflex.io/2010"
+        xmlns:bl="http://bluelego.flashartofwar.com"
+        width="480" height="800" background="#333333"
+        onCompleteHandler="startDemo" configURL="xml/config.xml"
+        >
+
+    <fx:Script><![CDATA[
+        import com.flashartofwar.fbootstrap.managers.SingletonManager;
+        import com.flashartofwar.fcss.stylesheets.IStyleSheetCollection;
+        import com.flashartofwar.fcss.stylesheets.StyleSheetCollection;
+
+        var styleSheet:IStyleSheetCollection = SingletonManager.getClassReference(StyleSheetCollection);
+
+        private function startDemo():void
+        {
+            var css:String = resourceManager.getResource("css/main.styles.fcss");
+            styleSheet.parseCSS(css);
+
+            var demo:BlueLegoDemo = new BlueLegoDemo();
+            addChild(demo);
+        }
+        ]]></fx:Script>
+
+</bl:BlueLegoApplication>

@@ -1,0 +1,45 @@
+#demoButton
+{
+    width:47;
+    height:52;
+    backgroundColor: white;
+    backgroundImage: decal("play_up");
+    buttonMode: true;
+    useHandCursor:true;
+}
+
+#demoButton:over
+{
+    backgroundImage: decal("play_over");
+}
+
+#myImage
+{
+    buttonMode: true;
+    useHandCursor:true;
+    alpha: 1;
+}
+
+#myImage:over
+{
+    alpha: .5;
+}
+
+#myLabel
+{
+    fontSize:40;
+    color: blue;
+    backgroundColor: white;
+}
+
+#myTextArea
+{
+    backgroundColor: white;
+    textFieldWidth: 300;
+    size: 20;
+}
+
+#demoComponent
+{
+    backgroundColor: blue;
+}

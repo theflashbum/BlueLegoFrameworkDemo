@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lego:LegoBlock
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:rx="http://rx.reflex.io/2010"
+        xmlns:lego="http://bluelego.flashartofwar.com"
+        styleID="demoComponent"
+        >
+
+    <fx:Script>
+        <![CDATA[
+        import blue.lego.managers.SpriteSheetManager;
+
+        import com.flashartofwar.fbootstrap.managers.SingletonManager;
+        import com.flashartofwar.fcss.stylesheets.IStyleSheetCollection;
+        import com.flashartofwar.fcss.stylesheets.StyleSheetCollection;
+        import com.flashartofwar.fspritesheets.sheets.ISpriteSheet;
+
+        import mx.resources.ResourceManager;
+
+        private var styleSheet:IStyleSheetCollection = SingletonManager.getClassReference(StyleSheetCollection);
+
+        private var resourceManager:ResourceManager = SingletonManager.getClassReference(ResourceManager);
+
+        private var spriteSheetManager:ISpriteSheet = SingletonManager.getClassReference(SpriteSheetManager);
+        ]]>
+    </fx:Script>
+
+    <lego:behaviors>
+        <lego:StyleBehavior styleSheet="{styleSheet}"/>
+    </lego:behaviors>
+    
+    <lego:layout>
+        <lego:VerticalLayoutAlgorithm/>
+    </lego:layout>
+
+    <lego:Label text="BlueLegoFramework!" styleID="myLabel">
+        <lego:behaviors>
+            <lego:StyleBehavior styleSheet="{styleSheet}"/>
+        </lego:behaviors>
+    </lego:Label>
+
+    <lego:LegoBlock styleID="demoButton" spriteSheet="{spriteSheetManager}">
+        <lego:behaviors>
+            <lego:StyleBehavior styleSheet="{styleSheet}"/>
+            <rx:ButtonBehavior></rx:ButtonBehavior>
+        </lego:behaviors>
+    </lego:LegoBlock>
+
+    <lego:TextArea styleID="myTextArea"
+                   text="This is a really long text thing that I want to see how it will run. Is it going to work?">
+        <lego:behaviors>
+            <lego:StyleBehavior styleSheet="{styleSheet}"/>
+        </lego:behaviors>
+    </lego:TextArea>
+
+    <lego:ImageBlock styleID="myImage" src="images/bluelego.jpg" width="480">
+        <lego:behaviors>
+            <rx:ButtonBehavior></rx:ButtonBehavior>
+        </lego:behaviors>
+    </lego:ImageBlock>
+
+</lego:LegoBlock>
