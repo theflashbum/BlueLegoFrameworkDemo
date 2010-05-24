@@ -27,6 +27,7 @@
 
 #myLabel
 {
+    font: Arial;
     fontSize:40;
     color: blue;
     backgroundColor: white;
@@ -34,8 +35,9 @@
 
 #myTextArea
 {
+    font: Arial;
     backgroundColor: white;
-    textFieldWidth: 300;
+    textFieldWidth: 400;
     size: 20;
 }
 

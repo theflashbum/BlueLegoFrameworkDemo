@@ -25,38 +25,35 @@
         ]]>
     </fx:Script>
 
-    <lego:behaviors>
-        <lego:StyleBehavior styleSheet="{styleSheet}"/>
-    </lego:behaviors>
-    
     <lego:layout>
         <lego:VerticalLayoutAlgorithm/>
     </lego:layout>
 
-    <lego:Label text="BlueLegoFramework!" styleID="myLabel">
+    <lego:Label text="Welcome To The" styleID="myLabel">
         <lego:behaviors>
             <lego:StyleBehavior styleSheet="{styleSheet}"/>
         </lego:behaviors>
     </lego:Label>
 
-    <lego:LegoBlock styleID="demoButton" spriteSheet="{spriteSheetManager}">
+    <lego:ImageBlock styleID="myImage" src="images/blue-lego-logo.jpg">
         <lego:behaviors>
-            <lego:StyleBehavior styleSheet="{styleSheet}"/>
             <rx:ButtonBehavior></rx:ButtonBehavior>
         </lego:behaviors>
-    </lego:LegoBlock>
+    </lego:ImageBlock>
+
+    <lego:Label text="Blue Lego Framework" styleID="myLabel">
+        <lego:behaviors>
+            <lego:StyleBehavior styleSheet="{styleSheet}"/>
+        </lego:behaviors>
+    </lego:Label>
 
     <lego:TextArea styleID="myTextArea"
-                   text="This is a really long text thing that I want to see how it will run. Is it going to work?">
+                   text="Blue Lego Framework is a new Component framework based on Flash Camo v2 and built on top of Reflex. The goal of BlueLego is to provide a clean, optimized, and easy to use set of component for building desktop, web and mobile apps.">
         <lego:behaviors>
             <lego:StyleBehavior styleSheet="{styleSheet}"/>
         </lego:behaviors>
     </lego:TextArea>
 
-    <lego:ImageBlock styleID="myImage" src="images/bluelego.jpg" width="480">
-        <lego:behaviors>
-            <rx:ButtonBehavior></rx:ButtonBehavior>
-        </lego:behaviors>
-    </lego:ImageBlock>
+
 
 </lego:LegoBlock>
